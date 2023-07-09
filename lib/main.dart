@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  runApp( MaterialApp(
     title: "something new",
-    home: Text("Home"),
+    home: Scaffold(
+      appBar: AppBar(
+        title: const Text("Home Page"),
+         centerTitle: true,
+         ),
+         body: const Text("Press the button below!"),
+         floatingActionButton: FloatingActionButton(
+          onPressed: () {
+           const Text("Add");
+          }),
+       ),
     ),
   );
 }
