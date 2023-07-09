@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Text("Hello, world!"));
+  runApp(const MaterialApp(
+    title: "something new",
+    home: Text("Home"),
+    ),
+  );
 }
 
