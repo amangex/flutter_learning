@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp( MaterialApp(
+void main() => runApp(const Fluttertutorialapp());
+
+
+
+class Fluttertutorialapp extends StatelessWidget {
+  const Fluttertutorialapp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
     title: "something new",
     home: Scaffold(
       appBar: AppBar(
@@ -17,7 +25,7 @@ void main() {
             fontWeight: FontWeight.bold,
             decoration: TextDecoration.underline,
             letterSpacing: 2.0,
-            color: Colors.black87,
+            color: Colors.red,
            ),
           ),
          floatingActionButton: FloatingActionButton(
@@ -26,7 +34,6 @@ void main() {
           }),
         backgroundColor: Colors.grey[300],
        ),
-    ),
-  );
+    );
+  }
 }
-
