@@ -8,35 +8,15 @@ class Fluttertutorialapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "something new",
+      title: "Home Page",
       home: Scaffold(
           appBar: AppBar(
             title: const Text("Home Page"),
             centerTitle: true,
             backgroundColor: Colors.grey[900],
           ),
-          body: RichText(
-            text: const TextSpan(
-              style: TextStyle(
-                fontSize: 30.0,
-                fontStyle: FontStyle.italic,
-                color: Colors.black,
-              ),
-              children: <TextSpan>[
-                TextSpan(text: "Press ", style: TextStyle(fontSize: 50.0)),
-                TextSpan(
-                    style: TextStyle(color: Colors.green),
-                    children: <TextSpan>[
-                      TextSpan(text: "this "),
-                      TextSpan(
-                          text: "button",
-                          style:
-                              TextStyle(decoration: TextDecoration.underline)),
-                    ]),
-                TextSpan(text: " below!"),
-              ],
-            ),
-          ),
+          body: Image.network(
+              "https://onpointfresh.com/wp-content/uploads/2023/04/0a9eea58fce2f263aa25b1635d7884ae.jpg"),
           floatingActionButton: FloatingActionButton(
             child: const Text("+"),
             onPressed: () {},
