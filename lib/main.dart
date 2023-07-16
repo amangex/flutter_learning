@@ -15,8 +15,7 @@ class Fluttertutorialapp extends StatelessWidget {
             centerTitle: true,
             backgroundColor: Colors.grey[900],
           ),
-          body: Image.network(
-              "https://onpointfresh.com/wp-content/uploads/2023/04/0a9eea58fce2f263aa25b1635d7884ae.jpg"),
+          body: Image.asset("assets/images/photo_2023-05-21_01-36-57.jpg"),
           floatingActionButton: FloatingActionButton(
             child: const Text("+"),
             onPressed: () {},
